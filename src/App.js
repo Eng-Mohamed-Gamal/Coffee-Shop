@@ -11,6 +11,7 @@ function App() {
 <Home></Home>
 <h1 className='cen' > <span>ABOUT</span> US </h1>
 <About></About>
+<h1 className='cen-2' > <span>OUR</span> MENU </h1>
     </div>
   );
 }

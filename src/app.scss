@@ -30,6 +30,14 @@ $back-color : #9A8174;
     font-size: 30px;
     color: white;
 }
+.cen-2{
+    margin: 20px 0px ;
+    text-align: center;
+    font-size: 30px;
+ span{
+    color: white;
+ }
+}
 
 
 
@@ -64,10 +72,10 @@ html{
 .App{
 min-height: 100vh;
 overflow: hidden;
+position: relative;
 }
 
 .nav{
-    position: relative;
     border-bottom: 1px solid white;
     .container{
         img{
@@ -112,7 +120,7 @@ overflow: hidden;
                 width: 250px;
                 border-radius:  10px; ;
                 position: absolute;
-                top:  101%;
+                top: 103px;
                 right: 20px;
                 transform-origin: top;
                 transform: scaleY(0);
@@ -136,7 +144,7 @@ overflow: hidden;
             .carts{
                 z-index: 100;
                 position: absolute;
-                top: 100%;
+                top: 103px;
                 right: -100%;
                 height: calc(100vh - 105px);
                 background-color: white;
@@ -233,6 +241,7 @@ overflow: hidden;
 .home{
 
 background-image: url("../public/IMAGES/home.jpg");
+z-index: -1;
 height: 70vh;
 background-size: cover;
 background-position: center;
@@ -285,7 +294,7 @@ button{
 // About
 
 .about{
-    margin-bottom: 100px;
+    margin-bottom: 50px;
     .grid{
         display: grid;
         align-items:stretch;

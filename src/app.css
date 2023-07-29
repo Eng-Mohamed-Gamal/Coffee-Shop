@@ -5,6 +5,15 @@
   color: white;
 }
 
+.cen-2 {
+  margin: 20px 0px;
+  text-align: center;
+  font-size: 30px;
+}
+.cen-2 span {
+  color: white;
+}
+
 * {
   margin: 0%;
   padding: 0%;
@@ -37,10 +46,10 @@ html {
 .App {
   min-height: 100vh;
   overflow: hidden;
+  position: relative;
 }
 
 .nav {
-  position: relative;
   border-bottom: 1px solid white;
 }
 .nav .container img {
@@ -102,7 +111,7 @@ html {
   width: 250px;
   border-radius: 10px;
   position: absolute;
-  top: 101%;
+  top: 103px;
   right: 20px;
   -webkit-transform-origin: top;
           transform-origin: top;
@@ -128,7 +137,7 @@ html {
 .nav .container .flex .carts {
   z-index: 100;
   position: absolute;
-  top: 100%;
+  top: 103px;
   right: -100%;
   height: calc(100vh - 105px);
   background-color: white;
@@ -235,6 +244,7 @@ html {
 }
 .home {
   background-image: url("../public/IMAGES/home.jpg");
+  z-index: -1;
   height: 70vh;
   background-size: cover;
   background-position: center;
@@ -296,7 +306,7 @@ html {
   }
 }
 .about {
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
 .about .grid {
   display: -ms-grid;
