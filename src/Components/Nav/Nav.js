@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react'
+import React, { useRef } from 'react'
 
 export default function Nav() {
     
@@ -6,18 +6,25 @@ export default function Nav() {
     const searchRef = useRef()
     const cartsRef = useRef()
 const Bars = () =>{
-    barsRef.current.classList.toggle("active")
+    barsRef.current.classList.toggle("translate")
+    if(barsRef.current.classList.contains("translate")){
+        barsRef.current.classList.add("trans")
+    }else{
+        setTimeout(()=>{
+            barsRef.current.classList.remove("trans")
+        },400)
+    }
     searchRef.current.classList.remove("scale")
-    cartsRef.current.classList.remove("active")
+    cartsRef.current.classList.remove("translate")
 }
 const Search = () =>{
     searchRef.current.classList.toggle("scale")
-    barsRef.current.classList.remove("active")
-    cartsRef.current.classList.remove("active")
+    barsRef.current.classList.remove("translate")
+    cartsRef.current.classList.remove("translate")
 }
 const Catrs = () =>{
-cartsRef.current.classList.toggle("active")
-barsRef.current.classList.remove("active")
+cartsRef.current.classList.toggle("translate")
+barsRef.current.classList.remove("translate")
 searchRef.current.classList.remove("scale")
 }
 

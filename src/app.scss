@@ -67,18 +67,17 @@ html{
     scroll-behavior: smooth;
 }
 
+
+
 // Nav
 
-.App{
-min-height: 100vh;
-overflow: hidden;
-}
+
 
 .nav{
     border-bottom: 1px solid white;
     position: sticky;
     top: 0%;
-    height: 104px;
+    background-color: black;
     .container{
         img{
             width: 150px;
@@ -93,7 +92,7 @@ overflow: hidden;
                 z-index: 100;
                 display: flex;
                 gap: 20px;
-                transition: right  0.4s linear;
+                // transition: transform  0.4s linear;
                 li{
                     a:hover{
                         border-bottom: 1px solid white;
@@ -144,14 +143,16 @@ overflow: hidden;
             }
 
             .carts{
+                opacity: 0;
                 z-index: 100;
-                position: absolute;
+                position: fixed;
                 top: 103px;
-                right: -100%;
+                right: 0%;
+                transform: translateX(100%);
                 height: calc(100vh - 105px);
                 background-color: white;
-                width: 320px;
-                transition: right 0.4s linear;
+                width: 300px;
+                transition:  0.4s linear;
                 .box{
                     display: flex;
                     padding: 20px;
@@ -185,27 +186,48 @@ overflow: hidden;
 }
 
 
-.active{
-    right: 0% !important;
+
+.translate{
+    transform: translateX(0%) !important ;
+    opacity: 1 !important;
+ 
 }
 .scale{
     transform: scaleY(1) !important;
 }
+.trans{
+    transition: all 0.4s linear !important;
+}
 
 
+
+@media (min-width : 901) {
+    .nav{
+        .container{
+            .flex{
+                ul{
+                    transition: opacity 0.4s linear !important;
+                }
+            }
+        }
+    }
+}
 
 @media (max-width : 900px) {
 .nav{
     .container{
         .flex{
             ul{
+                opacity: 0;
+                z-index: 100;
+                transform: translateX(100%);
                 flex-direction: column;
                 background-color: white;
                 width: 300px;
                 height: 100vh;
                 position: fixed;
                 top: 103px;
-                right: -100%;
+                right: 0%;
                 gap: 0px;
                 li{
                     height: 70px;
