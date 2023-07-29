@@ -2,6 +2,8 @@
   margin: 0%;
   padding: 0%;
   color: wheat;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
@@ -19,6 +21,11 @@ a {
 .container {
   width: 90%;
   margin: auto;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 .nav {
@@ -99,6 +106,59 @@ a {
   outline: none;
   border: none;
 }
+.nav .container .flex .carts {
+  position: absolute;
+  top: 100%;
+  right: -100%;
+  height: calc(100vh - 105px);
+  background-color: white;
+  width: 320px;
+  -webkit-transition: right 0.4s linear;
+  transition: right 0.4s linear;
+}
+.nav .container .flex .carts .box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 20px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid black;
+}
+.nav .container .flex .carts .box img {
+  width: 60px;
+  height: 60px;
+}
+.nav .container .flex .carts .box h3, .nav .container .flex .carts .box p, .nav .container .flex .carts .box i {
+  color: black;
+}
+.nav .container .flex .carts button {
+  text-transform: capitalize;
+  padding: 8px 14px;
+  background-color: #9A8174;
+  outline: none;
+  border: none;
+  color: wheat;
+  width: 90%;
+  text-align: center;
+  margin: 20px auto;
+  display: block;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.active {
+  right: 0% !important;
+}
+
+.scale {
+  -webkit-transform: scaleY(1) !important;
+          transform: scaleY(1) !important;
+}
 
 @media (max-width: 900px) {
   .nav .container .flex ul {
@@ -125,12 +185,5 @@ a {
   }
   .nav .container .flex .icons i.wait {
     display: block;
-  }
-  .nav .container .flex .active {
-    right: 0%;
-  }
-  .nav .container .flex .scale {
-    -webkit-transform: scaleY(1);
-            transform: scaleY(1);
   }
 }

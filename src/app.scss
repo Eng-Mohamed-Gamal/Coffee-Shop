@@ -3,13 +3,21 @@
 
 
 $main-color : wheat;
-$back-color : #FFE6BC;
+$back-color : #9A8174;
 
 @mixin button {
     text-transform: capitalize;
     padding: 8px 14px;
-    color: white;
-    background-color: $back-color;
+    background-color:$back-color ;
+    outline: none;
+    border: none;
+    color: $main-color;
+    width: 90%;
+    text-align: center;
+    margin: 20px auto;
+    display: block;
+    border-radius: 10px;
+    cursor: pointer;
 }
 
 
@@ -19,6 +27,7 @@ $back-color : #FFE6BC;
     margin: 0%;
     padding: 0%;
     color: $main-color;
+    box-sizing: border-box;
 }
 
 body{
@@ -36,9 +45,15 @@ a{
     margin: auto;
 }
 
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
 // Nav
 
 .nav{
+
     position: relative;
     border-bottom: 1px solid white;
     .container{
@@ -92,13 +107,46 @@ a{
                     border: none;
                 }
             }
+
+            .carts{
+                position: absolute;
+                top: 100%;
+                right: -100%;
+                height: calc(100vh - 105px);
+                background-color: white;
+                width: 320px;
+                transition: right 0.4s linear;
+                .box{
+                    display: flex;
+                    padding: 20px;
+                    justify-content: space-between;
+                    align-items: center;
+                    border-bottom: 1px solid black;
+                    img{
+                        width: 60px;
+                        height: 60px;
+                    }
+                    h3,p,i{
+                        color: black;
+                        
+                    }
+                }
+                button{
+                    @include button()
+                }
+            }
         }
 
     }
 }
 
 
-
+.active{
+    right: 0% !important;
+}
+.scale{
+    transform: scaleY(1) !important;
+}
 
 
 
@@ -131,12 +179,7 @@ a{
                     display: block;
                 }
             }
-            .active{
-                right: 0%;
-            }
-            .scale{
-                transform: scaleY(1);
-            }
+ 
         }
     }
 }

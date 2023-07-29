@@ -4,13 +4,21 @@ export default function Nav() {
     
     const barsRef = useRef()
     const searchRef = useRef()
+    const cartsRef = useRef()
 const Bars = () =>{
     barsRef.current.classList.toggle("active")
     searchRef.current.classList.remove("scale")
+    cartsRef.current.classList.remove("active")
 }
 const Search = () =>{
     searchRef.current.classList.toggle("scale")
     barsRef.current.classList.remove("active")
+    cartsRef.current.classList.remove("active")
+}
+const Catrs = () =>{
+cartsRef.current.classList.toggle("active")
+barsRef.current.classList.remove("active")
+searchRef.current.classList.remove("scale")
 }
 
   return (
@@ -40,12 +48,42 @@ const Search = () =>{
                 <i class="fa-solid fa-magnifying-glass"></i>
             </div>
             <div className="shopping">
-            <i class="fa-solid fa-cart-shopping"></i>
-            {/* <div className="carts">
+            <i class="fa-solid fa-cart-shopping"  onClick={Catrs} ></i>
+            <div className="carts"  ref={cartsRef} >
                 <div className="box">
                     <img src="IMAGES/cart-1.jpg" alt="" />
+                    <div className="con">
+                        <h3>Cart item 01</h3>
+                        <p>$15.99</p>
+                    </div>
+                    <i class="fa-solid fa-xmark"></i>
                 </div>
-            </div> */}
+                <div className="box">
+                    <img src="IMAGES/cart-2.jpg" alt="" />
+                    <div className="con">
+                        <h3>Cart item 02</h3>
+                        <p>$15.99</p>
+                    </div>
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+                <div className="box">
+                    <img src="IMAGES/cart-3.jpg" alt="" />
+                    <div className="con">
+                        <h3>Cart item 03</h3>
+                        <p>$15.99</p>
+                    </div>
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+                <div className="box">
+                    <img src="IMAGES/cart-4.jpg" alt="" />
+                    <div className="con">
+                        <h3>Cart item 04</h3>
+                        <p>$15.99</p>
+                    </div>
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+                <button>checkout now</button>
+            </div>
             </div>
         </div>
     </div>
