@@ -21,7 +21,116 @@ a {
   margin: auto;
 }
 
+.nav {
+  position: relative;
+  border-bottom: 1px solid white;
+}
 .nav .container img {
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 100px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.nav .container .flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.nav .container .flex ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+  -webkit-transition: -webkit-transform 0.4s linear;
+  transition: -webkit-transform 0.4s linear;
+  transition: transform 0.4s linear;
+  transition: transform 0.4s linear, -webkit-transform 0.4s linear;
+}
+.nav .container .flex .icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+}
+.nav .container .flex .icons i {
+  font-size: 20px;
+  cursor: pointer;
+}
+.nav .container .flex .icons i.wait {
+  display: none;
+}
+.nav .container .flex .search {
+  background-color: wheat;
+  padding: 10px 16px;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 250px;
+  border-radius: 10px;
+  position: absolute;
+  top: 101%;
+  right: 20px;
+  -webkit-transform-origin: top;
+          transform-origin: top;
+  -webkit-transform: scaleY(0);
+          transform: scaleY(0);
+  -webkit-transition: all 0.4s linear;
+  transition: all 0.4s linear;
+}
+.nav .container .flex .search i {
+  color: black;
+}
+.nav .container .flex .search input {
+  color: black;
+  padding: 6px 12px;
+  border-radius: 6px;
+  outline: none;
+  border: none;
+}
+
+@media (max-width: 900px) {
+  .nav .container .flex ul {
+    -webkit-transition: right 0.4s linear;
+    transition: right 0.4s linear;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-color: white;
+    width: 300px;
+    height: 100vh;
+    position: fixed;
+    top: 103px;
+    right: -100%;
+  }
+  .nav .container .flex ul li a {
+    display: block;
+    width: 100%;
+    padding: 20px 0px;
+    color: black;
+    border-bottom: 1px solid black;
+    text-align: center;
+  }
+  .nav .container .flex .icons i.wait {
+    display: block;
+  }
+  .nav .container .flex .active {
+    right: 0%;
+  }
+  .nav .container .flex .scale {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+  }
 }

@@ -14,6 +14,7 @@ $back-color : #FFE6BC;
 
 
 
+
 *{
     margin: 0%;
     padding: 0%;
@@ -38,13 +39,107 @@ a{
 // Nav
 
 .nav{
+    position: relative;
+    border-bottom: 1px solid white;
     .container{
         img{
-            width: 200px;
-            height: 200px;
-            
+            width: 150px;
+            height: 100px;
+            object-fit: cover;
+        }
+        .flex{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            ul{
+                display: flex;
+                gap: 20px;
+                transition: transform  0.4s linear;
+            }
+            .icons{
+                display: flex;
+                gap: 20px;
+                i{
+                    font-size: 20px;
+                    cursor: pointer;
+                }
+                i.wait{
+                    display: none;
+                }
+            }
+            .search{
+                background-color: $main-color;
+                padding: 10px 16px;
+                display: flex !important;
+                justify-content: space-between;
+                align-items: center;
+                width: 250px;
+                border-radius:  10px; ;
+                position: absolute;
+                top:  101%;
+                right: 20px;
+                transform-origin: top;
+                transform: scaleY(0);
+                transition: all  0.4s linear;
+                i{
+                    color: black;
+                }
+                input{
+                    color: black;
+                    padding: 6px 12px;
+                    border-radius: 6px;
+                    outline: none;
+                    border: none;
+                }
+            }
+        }
+
+    }
+}
+
+
+
+
+
+
+@media (max-width : 900px) {
+.nav{
+    .container{
+        .flex{
+            ul{
+                transition: right 0.4s linear;
+                flex-direction: column;
+                background-color: white;
+                width: 300px;
+                height: 100vh;
+                position: fixed;
+                top: 103px;
+                right: -100%;
+                li{
+                    a{
+                        display: block;
+                        width: 100%;
+                        padding: 20px 0px;
+                        color: black;
+                        border-bottom: 1px solid black;
+                        text-align: center;
+                    }
+                }
+            }
+            .icons{
+                i.wait{
+                    display: block;
+                }
+            }
+            .active{
+                right: 0%;
+            }
+            .scale{
+                transform: scaleY(1);
+            }
         }
     }
+}
 }
 
 // Nav
