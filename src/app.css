@@ -92,7 +92,7 @@ html {
 }
 .nav .container .flex .search {
   z-index: 100;
-  background-color: wheat;
+  background-color: #9A8174;
   padding: 10px 16px;
   display: -webkit-box !important;
   display: -ms-flexbox !important;
@@ -185,6 +185,7 @@ html {
   cursor: pointer;
   -webkit-transition: 0.3s linear;
   transition: 0.3s linear;
+  font-weight: bold;
 }
 .nav .container .flex .carts button:hover {
   letter-spacing: 4px;
@@ -297,6 +298,7 @@ html {
   cursor: pointer;
   -webkit-transition: 0.3s linear;
   transition: 0.3s linear;
+  font-weight: bold;
   width: 200px;
   margin: 20px 0px;
 }
@@ -373,6 +375,7 @@ html {
   cursor: pointer;
   -webkit-transition: 0.3s linear;
   transition: 0.3s linear;
+  font-weight: bold;
 }
 .about .grid .con button:hover {
   letter-spacing: 4px;
@@ -394,4 +397,62 @@ html {
   .about .container .grid img {
     height: 100%;
   }
+}
+.menu .container .grid {
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  gap: 10px;
+}
+.menu .container .grid img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+}
+.menu .container .grid .box {
+  border: 1px solid #ddd;
+  height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+.menu .container .grid .box h2 {
+  margin: 10px;
+  color: white;
+}
+.menu .container .grid .box h3 {
+  margin: 10px;
+  color: white;
+  font-size: 25px;
+}
+.menu .container .grid .box h3 span {
+  font-size: 20px;
+  text-decoration: line-through;
+}
+.menu .container .grid .box button {
+  text-transform: capitalize;
+  padding: 8px 14px;
+  background-color: #9A8174;
+  outline: none;
+  border: none;
+  color: wheat;
+  width: 90%;
+  text-align: center;
+  margin: 20px auto;
+  display: block;
+  border-radius: 10px;
+  cursor: pointer;
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
+  font-weight: bold;
+}
+.menu .container .grid .box button:hover {
+  letter-spacing: 4px;
 }

@@ -19,6 +19,7 @@ $back-color : #9A8174;
     border-radius: 10px;
     cursor: pointer;
     transition: 0.3s linear;
+    font-weight: bold;
     &:hover{
         letter-spacing: 4px;
     }
@@ -113,7 +114,7 @@ html{
             }
             .search{
                 z-index: 100;
-                background-color: $main-color;
+                background-color: $back-color;
                 padding: 10px 16px;
                 display: flex !important;
                 justify-content: space-between;
@@ -386,3 +387,48 @@ button{
 
 
 // About
+
+
+// Menu
+
+.menu{
+    .container{
+        .grid{
+            display: grid;
+            grid-template-columns: repeat(auto-fill , minmax(340px , 1fr));
+            gap: 10px;
+            
+            img{
+                width: 90px ;
+                height: 90px;
+                border-radius: 50%;
+            }
+            .box{
+                border: 1px solid #ddd;
+                height: 300px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                h2{
+                    margin: 10px;
+                    color: white;
+                }
+                h3{
+                    margin: 10px;
+                    color: white;
+                    font-size: 25px;
+                    span{
+                        font-size: 20px;
+                        text-decoration: line-through;
+                    }
+                }
+                button{
+                    @include button()
+                }
+            }
+        }
+    }
+}
+
+// Menu 
