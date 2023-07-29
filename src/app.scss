@@ -72,11 +72,13 @@ html{
 .App{
 min-height: 100vh;
 overflow: hidden;
-position: relative;
 }
 
 .nav{
     border-bottom: 1px solid white;
+    position: sticky;
+    top: 0%;
+    height: 104px;
     .container{
         img{
             width: 150px;
