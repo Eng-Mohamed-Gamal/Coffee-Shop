@@ -18,6 +18,10 @@ $back-color : #9A8174;
     display: block;
     border-radius: 10px;
     cursor: pointer;
+    transition: 0.3s linear;
+    &:hover{
+        letter-spacing: 4px;
+    }
 }
 
 
@@ -70,9 +74,10 @@ overflow: hidden;
             justify-content: space-between;
             align-items: center;
             ul{
+                z-index: 100;
                 display: flex;
                 gap: 20px;
-                transition: all  0.4s linear;
+                transition: right  0.4s linear;
                 li{
                     a:hover{
                         border-bottom: 1px solid white;
@@ -92,6 +97,7 @@ overflow: hidden;
                 }
             }
             .search{
+                z-index: 100;
                 background-color: $main-color;
                 padding: 10px 16px;
                 display: flex !important;
@@ -109,7 +115,7 @@ overflow: hidden;
                     color: black;
                     cursor: pointer;
                     &:hover{
-                        color: $main-color;
+                        color: white;
                     }
                 }
                 input{
@@ -122,13 +128,14 @@ overflow: hidden;
             }
 
             .carts{
+                z-index: 100;
                 position: absolute;
                 top: 100%;
                 right: -100%;
                 height: calc(100vh - 105px);
                 background-color: white;
                 width: 320px;
-                transition: right 0.4s linear;
+                transition: right 0.6s linear;
                 .box{
                     display: flex;
                     padding: 20px;
@@ -176,7 +183,6 @@ overflow: hidden;
     .container{
         .flex{
             ul{
-                transition: right 0.4s linear;
                 flex-direction: column;
                 background-color: white;
                 width: 300px;
@@ -215,3 +221,57 @@ overflow: hidden;
 }
 
 // Nav
+
+// Home
+
+.home{
+
+background-image: url("../public/IMAGES/home.jpg");
+height: 70vh;
+background-size: cover;
+background-position: center;
+position: relative;
+.con{
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    transform: translatey(-50% );
+h1{
+    color: white;
+    font-size: 50px;
+}
+p{
+    color: white;
+    width: 420px;
+    font-weight: bold;
+    font-size: 19px;
+}
+button{
+    @include button();
+    width: 200px;
+    margin: 20px 0px;
+}
+}
+}
+
+@media (max-width : 500px) {
+    .home{
+        .con{
+            left: 50%;
+            transform: translate(-50% , -50%);
+            h1{
+                font-size: 25px;
+                width: 300px;
+                
+            }
+            p{
+            
+                font-size: 19px;
+                width: 300px;
+                margin: 0%;
+            }
+        }
+    }
+}
+
+// Home
