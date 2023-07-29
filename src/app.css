@@ -424,11 +424,11 @@ html {
   text-align: center;
 }
 .menu .container .grid .box h2 {
-  margin: 10px;
+  margin: 10px 0px;
   color: white;
 }
 .menu .container .grid .box h3 {
-  margin: 10px;
+  margin: 10px 0px;
   color: white;
   font-size: 25px;
 }
@@ -455,4 +455,10 @@ html {
 }
 .menu .container .grid .box button:hover {
   letter-spacing: 4px;
+}
+
+@media (max-width: 390px) {
+  .menu .container .grid {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
 }
