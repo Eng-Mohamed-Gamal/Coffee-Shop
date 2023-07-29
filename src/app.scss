@@ -1,7 +1,16 @@
 
 
-$main-color : wheat;
 
+
+$main-color : wheat;
+$back-color : #FFE6BC;
+
+@mixin button {
+    text-transform: capitalize;
+    padding: 8px 14px;
+    color: white;
+    background-color: $back-color;
+}
 
 
 
@@ -25,3 +34,17 @@ a{
     width: 90%;
     margin: auto;
 }
+
+// Nav
+
+.nav{
+    .container{
+        img{
+            width: 200px;
+            height: 200px;
+            
+        }
+    }
+}
+
+// Nav

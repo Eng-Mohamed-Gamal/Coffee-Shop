@@ -20,3 +20,8 @@ a {
   width: 90%;
   margin: auto;
 }
+
+.nav .container img {
+  width: 200px;
+  height: 200px;
+}
