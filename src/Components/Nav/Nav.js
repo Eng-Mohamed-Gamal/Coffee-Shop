@@ -49,7 +49,10 @@ searchRef.current.classList.remove("scale")
             </div>
             <div className="shopping">
             <i class="fa-solid fa-cart-shopping"  onClick={Catrs} ></i>
-            <div className="carts"  ref={cartsRef} >
+       
+            </div>
+        </div>
+        <div className="carts"  ref={cartsRef} >
                 <div className="box">
                     <img src="IMAGES/cart-1.jpg" alt="" />
                     <div className="con">
@@ -84,8 +87,7 @@ searchRef.current.classList.remove("scale")
                 </div>
                 <button>checkout now</button>
             </div>
-            </div>
-        </div>
+
     </div>
 </div>
 </div>

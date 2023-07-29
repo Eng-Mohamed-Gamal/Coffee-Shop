@@ -25,7 +25,11 @@ a {
 
 html {
   scroll-behavior: smooth;
-  overflow-x: hidden;
+}
+
+.App {
+  min-height: 100vh;
+  overflow: hidden;
 }
 
 .nav {
@@ -54,10 +58,12 @@ html {
   display: -ms-flexbox;
   display: flex;
   gap: 20px;
-  -webkit-transition: -webkit-transform 0.4s linear;
-  transition: -webkit-transform 0.4s linear;
-  transition: transform 0.4s linear;
-  transition: transform 0.4s linear, -webkit-transform 0.4s linear;
+  -webkit-transition: all 0.4s linear;
+  transition: all 0.4s linear;
+}
+.nav .container .flex ul li a:hover {
+  border-bottom: 1px solid white;
+  color: white;
 }
 .nav .container .flex .icons {
   display: -webkit-box;
@@ -98,6 +104,10 @@ html {
 }
 .nav .container .flex .search i {
   color: black;
+  cursor: pointer;
+}
+.nav .container .flex .search i:hover {
+  color: wheat;
 }
 .nav .container .flex .search input {
   color: black;
@@ -135,6 +145,13 @@ html {
 }
 .nav .container .flex .carts .box h3, .nav .container .flex .carts .box p, .nav .container .flex .carts .box i {
   color: black;
+}
+.nav .container .flex .carts .box i {
+  cursor: pointer;
+  font-size: 25px;
+}
+.nav .container .flex .carts .box i:hover {
+  color: wheat;
 }
 .nav .container .flex .carts button {
   text-transform: capitalize;
@@ -174,14 +191,30 @@ html {
     position: fixed;
     top: 103px;
     right: -100%;
+    gap: 0px;
+  }
+  .nav .container .flex ul li {
+    height: 70px;
+    border-bottom: 1px solid black;
   }
   .nav .container .flex ul li a {
-    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     width: 100%;
-    padding: 20px 0px;
+    height: 100%;
     color: black;
-    border-bottom: 1px solid black;
     text-align: center;
+  }
+  .nav .container .flex ul li a:hover {
+    background-color: #9A8174;
+    color: wheat;
   }
   .nav .container .flex .icons i.wait {
     display: block;

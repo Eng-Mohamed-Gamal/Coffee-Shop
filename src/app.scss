@@ -47,13 +47,16 @@ a{
 
 html{
     scroll-behavior: smooth;
-    overflow-x: hidden;
 }
 
 // Nav
 
-.nav{
+.App{
+min-height: 100vh;
+overflow: hidden;
+}
 
+.nav{
     position: relative;
     border-bottom: 1px solid white;
     .container{
@@ -69,7 +72,13 @@ html{
             ul{
                 display: flex;
                 gap: 20px;
-                transition: transform  0.4s linear;
+                transition: all  0.4s linear;
+                li{
+                    a:hover{
+                        border-bottom: 1px solid white;
+                        color: white;
+                    }
+                }
             }
             .icons{
                 display: flex;
@@ -98,6 +107,10 @@ html{
                 transition: all  0.4s linear;
                 i{
                     color: black;
+                    cursor: pointer;
+                    &:hover{
+                        color: $main-color;
+                    }
                 }
                 input{
                     color: black;
@@ -129,6 +142,14 @@ html{
                     h3,p,i{
                         color: black;
                         
+                    }
+                    i{
+                        cursor: pointer;
+                        font-size: 25px;
+                    }
+                    i:hover{
+                        color: $main-color;
+                   
                     }
                 }
                 button{
@@ -163,14 +184,22 @@ html{
                 position: fixed;
                 top: 103px;
                 right: -100%;
+                gap: 0px;
                 li{
+                    height: 70px;
+                  border-bottom: 1px solid black;
                     a{
-                        display: block;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
                         width: 100%;
-                        padding: 20px 0px;
+                        height: 100%;
                         color: black;
-                        border-bottom: 1px solid black;
                         text-align: center;
+                        &:hover{
+                            background-color: $back-color;
+                            color: $main-color;
+                        }
                     }
                 }
             }
