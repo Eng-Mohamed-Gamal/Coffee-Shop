@@ -2,6 +2,7 @@
 import About from './Components/About/About';
 import Blog from './Components/Blog/Blog';
 import Contact from './Components/Contact/Contact';
+import Footer from './Components/Footer/Footer';
 import Home from './Components/Home/Home';
 import Menu from './Components/Menu/Menu';
 import Nav from './Components/Nav/Nav';
@@ -26,6 +27,7 @@ function App() {
 <Contact></Contact>
 <h1 className='cen-2' > <span>OUR</span> BLOGS </h1>
 <Blog></Blog>
+<Footer></Footer>
     </div>
   );
 }

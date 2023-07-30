@@ -762,3 +762,57 @@ button{
 
 
 // Blog
+
+
+// Footer
+
+.footer{
+    border-top: 1px solid#ddd;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    p{
+        position: absolute;
+        font-size: 20px;
+        animation: endd 10s linear infinite ;
+        padding: 20px;
+    }
+
+}
+
+@keyframes endd {
+    10%{
+        transform: skewY(30deg);
+        color: white;
+        background-color: $back-color;
+    }
+    40%{
+       transform: translateX(150%);
+       color: #9A8174;
+       background-color: white;
+    }
+
+    70%{
+        transform: translateX(-150%);
+        background-color: white;
+        color: red;
+    }
+    90%{
+        transform: translateY(100%);
+    }
+
+}
+
+@media (max-width : 700px ) {
+    .footer{
+        p{
+          animation: none;
+        }
+    }
+}
+
+
+// Footer
