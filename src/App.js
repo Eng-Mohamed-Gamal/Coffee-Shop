@@ -1,5 +1,6 @@
 
 import About from './Components/About/About';
+import Contact from './Components/Contact/Contact';
 import Home from './Components/Home/Home';
 import Menu from './Components/Menu/Menu';
 import Nav from './Components/Nav/Nav';
@@ -20,6 +21,8 @@ function App() {
 <Products></Products>
 <h1 className='cen-2' > <span>CUSTOMER’S</span> REVIEW </h1>
 <Review></Review>
+<h1 className='cen' > <span>CONTACT</span> US </h1>
+<Contact></Contact>
     </div>
   );
 }

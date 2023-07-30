@@ -607,3 +607,88 @@ html {
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   }
 }
+.contact {
+  margin-bottom: 50px;
+}
+.contact .container .grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+.contact .container .grid .map {
+  width: 100%;
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+  -webkit-transition: 0.2s linear;
+  transition: 0.2s linear;
+}
+.contact .container .grid form {
+  -webkit-transition: 0.2s linear;
+  transition: 0.2s linear;
+  background-color: #333;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  padding: 20px;
+}
+.contact .container .grid form h2 {
+  color: white;
+  text-align: center;
+}
+.contact .container .grid form div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid #ddd;
+  margin: 20px 0px;
+  padding: 10px;
+  gap: 10px;
+}
+.contact .container .grid form div input {
+  background-color: #333;
+  outline: none;
+  border: none;
+  width: 100%;
+  color: white;
+}
+.contact .container .grid form div i {
+  color: white;
+}
+.contact .container .grid form .sub {
+  text-transform: capitalize;
+  padding: 8px 14px;
+  background-color: #9A8174;
+  outline: none;
+  border: none;
+  color: wheat;
+  width: 90%;
+  text-align: center;
+  margin: 20px auto;
+  display: block;
+  border-radius: 10px;
+  cursor: pointer;
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
+  font-weight: bold;
+}
+.contact .container .grid form .sub:hover {
+  letter-spacing: 4px;
+}
+
+@media (max-width: 800px) {
+  .contact .container .grid {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+  .contact .container .grid .map {
+    height: 300px;
+  }
+}
