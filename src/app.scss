@@ -78,6 +78,7 @@ html{
     border-bottom: 1px solid white;
     position: sticky;
     top: 0%;
+    z-index: 100;
     background-color: black;
     .container{
         img{
@@ -694,14 +695,16 @@ button{
             grid-template-columns: repeat(auto-fill , minmax(340px , 1fr));
             gap: 10px;
             .box{
+       
                 border: 1px solid #ddd;
                 display: flex;
                 flex-direction: column;
                 .img{
-                        overflow: hidden;
-                        width: 100%;
-                        height: 300px;
-                        img{
+                    overflow: hidden;
+                    width: 100%;
+                    height: 300px;
+                    img{
+                            z-index: -1;
                             &:hover{
                                 transform: scale(1.20);
                             }

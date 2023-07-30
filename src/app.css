@@ -47,6 +47,7 @@ html {
   border-bottom: 1px solid white;
   position: sticky;
   top: 0%;
+  z-index: 100;
   background-color: black;
 }
 .nav .container img {
@@ -738,6 +739,7 @@ html {
   height: 300px;
 }
 .blog .container .grid .box .img img {
+  z-index: -1;
   -webkit-transition: 0.1s linear;
   transition: 0.1s linear;
   width: 100%;
