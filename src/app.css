@@ -72,6 +72,7 @@ html {
   display: -ms-flexbox;
   display: flex;
   gap: 20px;
+  font-size: 22px;
 }
 .nav .container .flex ul li a:hover {
   border-bottom: 1px solid white;
