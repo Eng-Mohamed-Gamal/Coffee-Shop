@@ -410,6 +410,13 @@ button{
                 justify-content: center;
                 align-items: center;
                 text-align: center;
+                transition: all 0.4s linear;
+                &:hover{
+                    background-color: white;
+                    h3{
+                        color: black;
+                    }
+                }
                 h2{
                     margin: 10px 0px;
                     color: white;
@@ -442,3 +449,78 @@ button{
 }
 
 // Menu 
+
+// products
+
+.product{
+    .container{
+        .grid{
+            display: grid;
+            grid-template-columns: repeat(auto-fill , minmax(340px , 1fr));
+            gap: 10px;
+            
+            img{
+                width: 190px ;
+                height: 290px;
+            }
+            .box{
+                border: 1px solid #ddd;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                transition: all 0.4s linear;
+                h2{
+                    margin: 10px 0px;
+                    color: white;
+                }
+                h3{
+                    margin: 10px 0px;
+                    color: white;
+                    font-size: 25px;
+                    span{
+                        font-size: 20px;
+                        text-decoration: line-through;
+                    }
+                }
+                .icons{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin: 20px 0px;
+                    gap: 10px;
+                    div{
+                        padding: 5px 10px;
+                        border: 1px solid #ddd;
+                        cursor: pointer;
+                        transition: all 0.2s linear;
+                        &:hover{
+                            background-color: $back-color;
+                            i{
+                                color: black;
+                            }
+                        }
+                        i{
+                            color: white;
+                            font-size: 19px;
+                        }
+                    }
+                }
+            }
+
+
+        }
+    }
+}
+
+@media (max-width: 390px ) {
+    .product{
+        .container{
+            .grid{
+                grid-template-columns: repeat(auto-fill , minmax(300px , 1fr));
+            }
+        }
+    }
+}
+
+// products

@@ -422,6 +422,14 @@ html {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
+  -webkit-transition: all 0.4s linear;
+  transition: all 0.4s linear;
+}
+.menu .container .grid .box:hover {
+  background-color: white;
+}
+.menu .container .grid .box:hover h3 {
+  color: black;
 }
 .menu .container .grid .box h2 {
   margin: 10px 0px;
@@ -459,6 +467,80 @@ html {
 
 @media (max-width: 390px) {
   .menu .container .grid {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+}
+.product .container .grid {
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  gap: 10px;
+}
+.product .container .grid img {
+  width: 190px;
+  height: 290px;
+}
+.product .container .grid .box {
+  border: 1px solid #ddd;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -webkit-transition: all 0.4s linear;
+  transition: all 0.4s linear;
+}
+.product .container .grid .box h2 {
+  margin: 10px 0px;
+  color: white;
+}
+.product .container .grid .box h3 {
+  margin: 10px 0px;
+  color: white;
+  font-size: 25px;
+}
+.product .container .grid .box h3 span {
+  font-size: 20px;
+  text-decoration: line-through;
+}
+.product .container .grid .box .icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 20px 0px;
+  gap: 10px;
+}
+.product .container .grid .box .icons div {
+  padding: 5px 10px;
+  border: 1px solid #ddd;
+  cursor: pointer;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+.product .container .grid .box .icons div:hover {
+  background-color: #9A8174;
+}
+.product .container .grid .box .icons div:hover i {
+  color: black;
+}
+.product .container .grid .box .icons div i {
+  color: white;
+  font-size: 19px;
+}
+
+@media (max-width: 390px) {
+  .product .container .grid {
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   }
 }
