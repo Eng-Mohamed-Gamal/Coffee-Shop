@@ -546,6 +546,7 @@ button{
 
 // Review
 .review{
+    overflow: hidden;
     .container{
         .grid{
             display: grid;
@@ -564,6 +565,18 @@ button{
                 align-items: center;
                 text-align: center;
                 transition: all 0.4s linear;
+                &:nth-of-type(1):hover{
+                    transform-origin: top;
+                    transform: skew(20deg, 20deg);
+                }
+                &:nth-of-type(2):hover{
+                    transform-origin: left;
+                    transform: skew(20deg, 20deg);
+                }
+                &:nth-of-type(3):hover{
+                    transform-origin: bottom;
+                    transform: skew(20deg, 20deg);
+                }
                 p{
                     margin: 10px 0px;
                 }
@@ -669,3 +682,83 @@ button{
 }
 
 // Contact
+
+
+// Blog
+
+.blog{
+    margin-bottom: 60px;
+    .container{
+        .grid{
+            display: grid;
+            grid-template-columns: repeat(auto-fill , minmax(340px , 1fr));
+            gap: 10px;
+            .box{
+                border: 1px solid #ddd;
+                display: flex;
+                flex-direction: column;
+                .img{
+                        overflow: hidden;
+                        width: 100%;
+                        height: 300px;
+                        img{
+                            &:hover{
+                                transform: scale(1.20);
+                            }
+                            transition: 0.1s linear;
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                    .con{
+                        width: 100%;
+                        height: 50%;
+                        overflow: hidden;
+                        padding: 20px;
+                        h2{
+                            margin: 6px 0px;
+                            color: white;
+                            &:hover{
+                                color: $back-color;
+                            }
+                        }
+
+                        h3{
+                            color: white;
+                            margin: 6px 0px;
+                        }
+                        p{
+                            margin: 20px 0px;
+                            color: white;
+                            font-family: cursive;
+                            font-style: italic;
+                            transition: linear 0.3s ;
+                            &:hover{
+                                transform-origin: top;
+                                transform: scaley(1.5) skewX(-30deg) translatey(-10px);  
+                            }
+                        }
+                        button{
+                            @include button()
+                        }
+                    }
+                }
+    
+    
+            }
+        }
+    }
+    
+    @media (max-width: 390px ) {
+        .blog{
+            .container{
+                .grid{
+                    grid-template-columns: repeat(auto-fill , minmax(300px , 1fr));
+                }
+            }
+        }
+    }
+
+
+
+// Blog

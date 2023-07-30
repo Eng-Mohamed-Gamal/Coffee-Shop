@@ -556,6 +556,9 @@ html {
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   }
 }
+.review {
+  overflow: hidden;
+}
 .review .container .grid {
   display: -ms-grid;
   display: grid;
@@ -581,6 +584,24 @@ html {
   text-align: center;
   -webkit-transition: all 0.4s linear;
   transition: all 0.4s linear;
+}
+.review .container .grid .box:nth-of-type(1):hover {
+  -webkit-transform-origin: top;
+          transform-origin: top;
+  -webkit-transform: skew(20deg, 20deg);
+          transform: skew(20deg, 20deg);
+}
+.review .container .grid .box:nth-of-type(2):hover {
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  -webkit-transform: skew(20deg, 20deg);
+          transform: skew(20deg, 20deg);
+}
+.review .container .grid .box:nth-of-type(3):hover {
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+  -webkit-transform: skew(20deg, 20deg);
+          transform: skew(20deg, 20deg);
 }
 .review .container .grid .box p {
   margin: 10px 0px;
@@ -690,5 +711,96 @@ html {
   }
   .contact .container .grid .map {
     height: 300px;
+  }
+}
+.blog {
+  margin-bottom: 60px;
+}
+.blog .container .grid {
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  gap: 10px;
+}
+.blog .container .grid .box {
+  border: 1px solid #ddd;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.blog .container .grid .box .img {
+  overflow: hidden;
+  width: 100%;
+  height: 300px;
+}
+.blog .container .grid .box .img img {
+  -webkit-transition: 0.1s linear;
+  transition: 0.1s linear;
+  width: 100%;
+  height: 100%;
+}
+.blog .container .grid .box .img img:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+.blog .container .grid .box .con {
+  width: 100%;
+  height: 50%;
+  overflow: hidden;
+  padding: 20px;
+}
+.blog .container .grid .box .con h2 {
+  margin: 6px 0px;
+  color: white;
+}
+.blog .container .grid .box .con h2:hover {
+  color: #9A8174;
+}
+.blog .container .grid .box .con h3 {
+  color: white;
+  margin: 6px 0px;
+}
+.blog .container .grid .box .con p {
+  margin: 20px 0px;
+  color: white;
+  font-family: cursive;
+  font-style: italic;
+  -webkit-transition: linear 0.3s;
+  transition: linear 0.3s;
+}
+.blog .container .grid .box .con p:hover {
+  -webkit-transform-origin: top;
+          transform-origin: top;
+  -webkit-transform: scaley(1.5) skewX(-30deg) translatey(-10px);
+          transform: scaley(1.5) skewX(-30deg) translatey(-10px);
+}
+.blog .container .grid .box .con button {
+  text-transform: capitalize;
+  padding: 8px 14px;
+  background-color: #9A8174;
+  outline: none;
+  border: none;
+  color: wheat;
+  width: 90%;
+  text-align: center;
+  margin: 20px auto;
+  display: block;
+  border-radius: 10px;
+  cursor: pointer;
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
+  font-weight: bold;
+}
+.blog .container .grid .box .con button:hover {
+  letter-spacing: 4px;
+}
+
+@media (max-width: 390px) {
+  .blog .container .grid {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   }
 }
