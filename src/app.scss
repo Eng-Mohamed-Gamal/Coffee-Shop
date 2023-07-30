@@ -259,6 +259,24 @@ html{
 }
 }
 
+@media (max-width : 450px) {
+    .nav{
+        .container{
+            .flex{
+                ul{
+                    width: 150px;
+                }
+                .carts{
+                    width: 250px;
+                    .box{
+                        padding: 20px 8px ;
+                    }
+                }
+            }
+        }
+    }
+}
+
 // Nav
 
 // Home
@@ -527,5 +545,60 @@ button{
 
 
 // Review
+.review{
+    .container{
+        .grid{
+            display: grid;
+            grid-template-columns: repeat(auto-fill , minmax(340px , 1fr));
+            gap: 10px;
+            
+            img{
+                width: 90px ;
+                height: 90px;
+                border-radius: 50%;
+            }
+            .box{
+                border: 1px solid #ddd;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                transition: all 0.4s linear;
+                p{
+                    margin: 10px 0px;
+                }
+                h3{
+                    margin: 4px 0px;
+                    color: white;
+                    font-size: 25px;
+                    span{
+                        font-size: 20px;
+                        text-decoration: line-through;
+                    }
+                }
+                i{
+                    margin: 20px 0px;
+                    font-size: 50px;
+                }
+                .starts{
+                    i{
+                        font-size: 20px;
+                    }
+                }
+            }
 
+
+        }
+    }
+}
+
+@media (max-width: 390px ) {
+    .review{
+        .container{
+            .grid{
+                grid-template-columns: repeat(auto-fill , minmax(300px , 1fr));
+            }
+        }
+    }
+}
 // Review

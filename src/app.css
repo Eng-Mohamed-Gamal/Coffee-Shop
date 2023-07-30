@@ -259,6 +259,17 @@ html {
     display: block;
   }
 }
+@media (max-width: 450px) {
+  .nav .container .flex ul {
+    width: 150px;
+  }
+  .nav .container .flex .carts {
+    width: 250px;
+  }
+  .nav .container .flex .carts .box {
+    padding: 20px 8px;
+  }
+}
 .home {
   background-image: url("../public/IMAGES/home.jpg");
   z-index: -1;
@@ -542,6 +553,57 @@ html {
 
 @media (max-width: 390px) {
   .product .container .grid {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+}
+.review .container .grid {
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  gap: 10px;
+}
+.review .container .grid img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+}
+.review .container .grid .box {
+  border: 1px solid #ddd;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -webkit-transition: all 0.4s linear;
+  transition: all 0.4s linear;
+}
+.review .container .grid .box p {
+  margin: 10px 0px;
+}
+.review .container .grid .box h3 {
+  margin: 4px 0px;
+  color: white;
+  font-size: 25px;
+}
+.review .container .grid .box h3 span {
+  font-size: 20px;
+  text-decoration: line-through;
+}
+.review .container .grid .box i {
+  margin: 20px 0px;
+  font-size: 50px;
+}
+.review .container .grid .box .starts i {
+  font-size: 20px;
+}
+
+@media (max-width: 390px) {
+  .review .container .grid {
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   }
 }

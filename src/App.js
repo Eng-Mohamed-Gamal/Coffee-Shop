@@ -4,6 +4,7 @@ import Home from './Components/Home/Home';
 import Menu from './Components/Menu/Menu';
 import Nav from './Components/Nav/Nav';
 import Products from './Components/Products/Products';
+import Review from './Components/Review/Review';
 import './app.css';
 
 function App() {
@@ -17,6 +18,8 @@ function App() {
 <Menu></Menu>
 <h1 className='cen' > <span>LATEST</span> PRODUCTS </h1>
 <Products></Products>
+<h1 className='cen-2' > <span>CUSTOMER’S</span> REVIEW </h1>
+<Review></Review>
     </div>
   );
 }
