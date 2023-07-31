@@ -12,7 +12,7 @@ export default function Products() {
                 <div className="love"><i class="fa-solid fa-heart"></i></div>
                 <div className="eye"><i class="fa-regular fa-eye"></i></div>
             </div>
-            <img src="IMAGES/product-1.jpg" alt="" />
+            <img src="IMAGES/product-1.png" alt="" />
             <h2>Fresh Coffee</h2>
             <div className="starts">
             <i class="fa-solid fa-star"></i>
@@ -31,7 +31,7 @@ export default function Products() {
                 <div className="love"><i class="fa-solid fa-heart"></i></div>
                 <div className="eye"><i class="fa-regular fa-eye"></i></div>
             </div>
-            <img src="IMAGES/product-2.jpg" alt="" />
+            <img src="IMAGES/product-2.png" alt="" />
             <h2>Fresh Coffee</h2>
             <div className="starts">
             <i class="fa-solid fa-star"></i>
@@ -50,7 +50,7 @@ export default function Products() {
                 <div className="love"><i class="fa-solid fa-heart"></i></div>
                 <div className="eye"><i class="fa-regular fa-eye"></i></div>
             </div>
-            <img src="IMAGES/product-3.jpg" alt="" />
+            <img src="IMAGES/product-3.png" alt="" />
             <h2>Fresh Coffee</h2>
             <div className="starts">
             <i class="fa-solid fa-star"></i>

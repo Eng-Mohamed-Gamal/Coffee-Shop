@@ -61,7 +61,7 @@ searchRef.current.classList.remove("scale")
         </div>
         <div className="carts"  ref={cartsRef} >
                 <div className="box">
-                    <img src="IMAGES/cart-1.jpg" alt="" />
+                    <img src="IMAGES/cart-1.png" alt="" />
                     <div className="con">
                         <h3>Cart item 01</h3>
                         <p>$15.99</p>
@@ -69,7 +69,7 @@ searchRef.current.classList.remove("scale")
                     <i class="fa-solid fa-xmark"></i>
                 </div>
                 <div className="box">
-                    <img src="IMAGES/cart-2.jpg" alt="" />
+                    <img src="IMAGES/cart-2.png" alt="" />
                     <div className="con">
                         <h3>Cart item 02</h3>
                         <p>$15.99</p>
@@ -77,7 +77,7 @@ searchRef.current.classList.remove("scale")
                     <i class="fa-solid fa-xmark"></i>
                 </div>
                 <div className="box">
-                    <img src="IMAGES/cart-3.jpg" alt="" />
+                    <img src="IMAGES/cart-3.png" alt="" />
                     <div className="con">
                         <h3>Cart item 03</h3>
                         <p>$15.99</p>
@@ -85,7 +85,7 @@ searchRef.current.classList.remove("scale")
                     <i class="fa-solid fa-xmark"></i>
                 </div>
                 <div className="box">
-                    <img src="IMAGES/cart-4.jpg" alt="" />
+                    <img src="IMAGES/cart-4.png" alt="" />
                     <div className="con">
                         <h3>Cart item 04</h3>
                         <p>$15.99</p>

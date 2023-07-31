@@ -7,7 +7,7 @@ export default function Menu() {
       <div className="grid">
         <div className="box">
           <div className="con">
-            <img src="IMAGES/menu-1.jpg" alt="" />
+            <img src="IMAGES/menu-1.png" alt="" />
             <h2>Tasy And Healthy</h2>
             <h3>$15.99 <span>$20.99</span></h3>
             <button>Add To Cart</button>
@@ -15,7 +15,7 @@ export default function Menu() {
         </div>
         <div className="box">
           <div className="con">
-            <img src="IMAGES/menu-2.jpg" alt="" />
+            <img src="IMAGES/menu-2.png" alt="" />
             <h2>Tasy And Healthy</h2>
             <h3>$15.99 <span>$20.99</span></h3>
             <button>Add To Cart</button>
@@ -23,7 +23,7 @@ export default function Menu() {
         </div>
         <div className="box">
           <div className="con">
-            <img src="IMAGES/menu-3.jpg" alt="" />
+            <img src="IMAGES/menu-3.png" alt="" />
             <h2>Tasy And Healthy</h2>
             <h3>$15.99 <span>$20.99</span></h3>
             <button>Add To Cart</button>
@@ -31,7 +31,7 @@ export default function Menu() {
         </div>
         <div className="box">
           <div className="con">
-            <img src="IMAGES/menu-4.jpg" alt="" />
+            <img src="IMAGES/menu-4.png" alt="" />
             <h2>Tasy And Healthy</h2>
             <h3>$15.99 <span>$20.99</span></h3>
             <button>Add To Cart</button>
@@ -39,7 +39,7 @@ export default function Menu() {
         </div>
         <div className="box">
           <div className="con">
-            <img src="IMAGES/menu-5.jpg" alt="" />
+            <img src="IMAGES/menu-5.png" alt="" />
             <h2>Tasy And Healthy</h2>
             <h3>$15.99 <span>$20.99</span></h3>
             <button>Add To Cart</button>
@@ -47,7 +47,7 @@ export default function Menu() {
         </div>
         <div className="box">
           <div className="con">
-            <img src="IMAGES/menu-6.jpg" alt="" />
+            <img src="IMAGES/menu-6.png" alt="" />
             <h2>Tasy And Healthy</h2>
             <h3>$15.99 <span>$20.99</span></h3>
             <button>Add To Cart</button>

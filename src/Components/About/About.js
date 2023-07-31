@@ -6,7 +6,7 @@ export default function About() {
     <div className="container">
         <div className="grid">
             <div className="img">
-                <img src="IMAGES/about.jpg" alt="" />
+                <img src="IMAGES/about.png" alt="" />
             </div>
             <div className="con">
                 <h2>What Makes Coffee Special ?</h2>

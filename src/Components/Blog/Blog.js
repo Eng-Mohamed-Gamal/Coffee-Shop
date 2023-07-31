@@ -7,7 +7,7 @@ export default function Blog() {
     <div className="grid">
         <div className="box">
             <div className="img">
-                <img src="IMAGES/blog-1.jpg" alt="" />
+                <img src="IMAGES/blog-1.png" alt="" />
             </div>
             <div className="con">
                 <h2> Tasty And Refreshing Coffee  </h2>
@@ -18,7 +18,7 @@ export default function Blog() {
         </div>
         <div className="box">
             <div className="img">
-                <img src="IMAGES/blog-2.jpg" alt="" />
+                <img src="IMAGES/blog-2.png" alt="" />
             </div>
             <div className="con">
                 <h2> Tasty And Refreshing Coffee  </h2>
@@ -29,7 +29,7 @@ export default function Blog() {
         </div>
         <div className="box">
             <div className="img">
-                <img src="IMAGES/blog-3.jpg" alt="" />
+                <img src="IMAGES/blog-3.png" alt="" />
             </div>
             <div className="con">
                 <h2> Tasty And Refreshing Coffee  </h2>
