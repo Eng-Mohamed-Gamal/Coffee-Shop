@@ -203,13 +203,13 @@ html{
 
 
 
-@media (min-width : 901) {
+@media (min-width : 901px) {
     .nav{
         .container{
             .flex{
-                ul{
-                    transition: opacity 0.4s linear !important;
-                }
+     .trans{
+        transition: none !important;
+     }
             }
         }
     }
