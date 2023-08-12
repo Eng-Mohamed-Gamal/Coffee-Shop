@@ -198,22 +198,12 @@ html{
     transform: scaleY(1) !important;
 }
 .trans{
-    transition: all 0.4s linear !important;
+    transition: all 0.4s linear ;
 }
 
 
 
-@media (min-width : 901px) {
-    .nav{
-        .container{
-            .flex{
-     .trans{
-        transition: none !important;
-     }
-            }
-        }
-    }
-}
+
 
 @media (max-width : 900px) {
 .nav{
@@ -277,6 +267,13 @@ html{
         }
     }
 }
+
+
+@media (min-width : 901px) {  
+    .trans{
+       transition: none !important ;
+    }
+   }
 
 // Nav
 

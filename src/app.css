@@ -205,16 +205,10 @@ html {
 }
 
 .trans {
-  -webkit-transition: all 0.4s linear !important;
-  transition: all 0.4s linear !important;
+  -webkit-transition: all 0.4s linear;
+  transition: all 0.4s linear;
 }
 
-@media (min-width: 901) {
-  .nav .container .flex ul {
-    -webkit-transition: opacity 0.4s linear !important;
-    transition: opacity 0.4s linear !important;
-  }
-}
 @media (max-width: 900px) {
   .nav .container .flex ul {
     opacity: 0;
@@ -269,6 +263,12 @@ html {
   }
   .nav .container .flex .carts .box {
     padding: 20px 8px;
+  }
+}
+@media (min-width: 901px) {
+  .trans {
+    -webkit-transition: none !important;
+    transition: none !important;
   }
 }
 .home {
